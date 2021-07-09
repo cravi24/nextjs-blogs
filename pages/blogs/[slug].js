@@ -4,8 +4,8 @@ import Image from 'next/image';
 import style from './slug.module.css';
 
 const client = createClient({
-  space: 'ok393afkpeyf',
-  accessToken: 'EM99PUFNBPBr88KBSjbYUDJwgnCSWEOHfx0c_5XZKqo',
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_KEY,
 });
 
 export async function getStaticPaths() {

@@ -4,13 +4,13 @@ import styles from '../styles/Home.module.css';
 
 export async function getStaticProps() {
   const client = createClient({
-    space: 'ok393afkpeyf',
-    accessToken: 'EM99PUFNBPBr88KBSjbYUDJwgnCSWEOHfx0c_5XZKqo',
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
 
   const res = await client.getEntries({
     content_type: 'blog',
-    locale: 'de'
+    locale: 'de',
   });
 
   return {
