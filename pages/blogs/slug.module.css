@@ -1,0 +1,32 @@
+.BlogDetails {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.content p code {
+    display: block;
+    padding: 10px;
+    overflow: scroll;
+    white-space: pre;
+    color: whitesmoke;
+    background: #363f48;
+}
+
+.content ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.content li p {
+    margin: 0;
+    padding: 0;
+}
+
+.content a {
+    color: teal;
+}
+@media (max-width: 600px) {
+    .BlogDetails {
+        width: 95%;
+    }
+}
