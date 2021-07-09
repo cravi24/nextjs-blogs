@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import style from './BlogCard.module.scss';
 
 const BlogCard = ({ blog }) => {
   const { title, slug, blogContent, thumbnail } = blog.fields;
   return (
-    <div className={styles.card}>
+    <div className={style.card}>
       <Link href={`/blogs/${slug}`}>
         <a>
           <Image
